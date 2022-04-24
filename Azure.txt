@@ -1,0 +1,12 @@
+dexmonvoid
+Azuresqldb2021
+
+Server=tcp:sqldbeude.database.windows.net,1433;
+Initial Catalog=SQLDB;
+Persist Security Info=False;
+User ID=dexmonvoid;
+Password=Azuresqldb2021;
+MultipleActiveResultSets=False;
+Encrypt=True;
+TrustServerCertificate=False;
+Connection Timeout=30;

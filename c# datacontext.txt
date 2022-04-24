@@ -1,0 +1,4 @@
+
+Scaffold-Dbcontext -provider Microsoft.EntityFrameworkCore.SqlServer -connection "Server=localhost; Database=Farmazon; User Id=sa; Password=pwMssql2021;" -o Model
+
+Scaffold-Dbcontext -provider Microsoft.EntityFrameworkCore.SqlServer -connection "Server=localhost; Database=DB; User Id=sa; Password=pwMssql2021;" -o ModelDB

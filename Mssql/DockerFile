@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/mssql/server:latest AS mssql
+ENV ACCEPT_EULA=Y
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=pwMssql2021
+ENV MSSQL_PID=Express
+ENV MSSQL_TCP_PORT=1433 
+RUN (/opt/mssql/bin/sqlservr --accept-eula & ) 
