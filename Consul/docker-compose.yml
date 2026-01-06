@@ -2,8 +2,14 @@ version: "3.4"
 services:
   s_consul:
     container_name: c_consul
+    command: agent -server -bootstrap-expect=1 -ui -client=0.0.0.0
     image: consul:1.15.4
     ports:
       - "8500:8500"
       - "8600:8600/tcp"
       - "8600:8600/udp"
+    volumes:
+      - consul-data:/consul/data
+
+volumes:
+  consul-data:
